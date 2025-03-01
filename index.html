@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
 </head>
 <body>
     <div id="resultado"></div>
     
     <script>
-        var valores=[10,30,40,20,50];
-        var resultado=valores[1]+valores[2]+valores[2]+valores[4]+valores[4]+valores[0]+valores[3]+valores[0];
-        
-        document.getElementById("resultado").innerHTML="Resultado es: "+resultado
-        
-    </script>
+        function sumar(valor1, valor2) 
+        {
+            var resultado = valor1 + valor2;
+            document.getElementById("resultado").innerHTML += "Resultado de la suma es: " + resultado + "<br>";
+        }
 
+        function restar(valor1, valor2) {
+            var resultado = valor1 - valor2;
+            document.getElementById("resultado").innerHTML += "Resultado de la resta es: " + resultado + "<br>";
+        }
+
+        function multiplicar(valor1, valor2) {
+            var resultado = valor1 * valor2;
+            document.getElementById("resultado").innerHTML += "Resultado de la multiplicación es: " + resultado + "<br>";
+        }
+
+        function dividir(valor1, valor2) {
+            var resultado = valor1/valor2;
+                document.getElementById("resultado").innerHTML += "Resultado de la división es: " + resultado + "<br>";
+            }
+
+
+        sumar(150, 20);
+        restar(150, 20);
+        multiplicar(150, 20);
+        dividir(150, 20);
+    </script>
 </body>
 </html>
