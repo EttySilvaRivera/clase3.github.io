@@ -12,29 +12,10 @@
         function sumar(valor1, valor2) 
         {
             var resultado = valor1 + valor2;
-            document.getElementById("resultado").innerHTML += "Resultado de la suma es: " + resultado + "<br>";
-        }
+            return resultado;
+       }
+       document.getElementById("resultado").innerHTML += "Resultado de la suma es: " +sumar(30,20);
 
-        function restar(valor1, valor2) {
-            var resultado = valor1 - valor2;
-            document.getElementById("resultado").innerHTML += "Resultado de la resta es: " + resultado + "<br>";
-        }
-
-        function multiplicar(valor1, valor2) {
-            var resultado = valor1 * valor2;
-            document.getElementById("resultado").innerHTML += "Resultado de la multiplicación es: " + resultado + "<br>";
-        }
-
-        function dividir(valor1, valor2) {
-            var resultado = valor1/valor2;
-                document.getElementById("resultado").innerHTML += "Resultado de la división es: " + resultado + "<br>";
-            }
-
-
-        sumar(150, 20);
-        restar(150, 20);
-        multiplicar(150, 20);
-        dividir(150, 20);
     </script>
 </body>
 </html>
