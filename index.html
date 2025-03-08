@@ -7,16 +7,30 @@
 </head>
 <body>
     <script>
-       var dato=20;
+       var dato=5;
 
-       if(dato<=10) {
-            document.write("La condición es verdadera");
-        } else if (dato<=15) {
-            document.write("La segunda condición es falsa");
-        } else{
-            document.write("La primera y segunda condicion son falsas");
+       if (dato < 2) {
+            document.write("El dato es menor a 2");
         }
         
+        else if (dato < 4) {
+            document.write("El dato es menor a 4");
+        }
+       
+        else if (dato < 6) {
+            document.write("El dato es menor a 6");
+        }
+        
+        else if (dato < 68) {
+            document.write("El dato es menor a 68");
+        }
+
+        else if (dato <= 10) {
+            document.write("El dato es menor o igual a 10");
+        }
+        else {
+            document.write("El dato es mayor a 10");
+        }
     </script>
 </body>
 </html>
