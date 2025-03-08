@@ -7,10 +7,14 @@
 </head>
 <body>
     <script>
-     var x = 100;
-     var dato= 500;
-        while (x <= dato) {
-            document.write(x + "<br>");
+     var x = 0;
+     var dato= [20,30,40];
+        while (x < dato.length) {
+            if(dato[x]==20){
+                x=x+1
+                continue;
+            }
+            document.write(dato[x] + "<br>");
             x = x + 1;
         }
     </script>
